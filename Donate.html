@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="Donate.css">
+</head>
+<body>
+    <script src="Donate.js"></script>
+    <div class="header">
+      <nav id="navbar">
+          <img src="./logo real.png" class="logo">
+          <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Turtle Hatcheries</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Help</a></li>
+          </ul>
+          <a href="#" class="register-btn">Register Now</a>
+          <a href="#" class="simg"><img id="sbtn" src="./search btn.png" alt="" onclick="togglebtn()"></a>
+      </nav>
+      <div class="container">
+          <h1>TURTLE HATCHERIES IN SRI LANKA</h1>
+          <h2>DONATE</h2>
+          <div class="search-bar">
+              <form>
+                  <div class="search-input">
+                 
+                              <label>Search:</label>
+                              <input type="text" placeholder="Search about turtles">
+                              </div>
+                              <button type="submit"><img src="./real search button.png" alt=""></button>
+              </form>
+                  
+          </div>
+      </div>
+   </div>
+  
+  
+  
+  </div>
+  <br><br><br><br>
+   
+       <div class="form">
+        <form method="get">
+          <fieldset>
+            <br>
+           <legend><b><u><h2>Personal Information-</h2></u></b></legend>
+           <p>
+            <br>
+            <label for="fname">Full Name:</label>
+            <input type="text" maxlength="30" name="fname" required id="fname">
+           </p>
+           <p>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+           </p>
+           <p>
+            <br>
+            <label for="country">Country:</label>
+            <select name="country" id="country" size="4">
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="India">India</option>
+              <option value="Australia">Australia</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="UAE">UAE</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Spain">Spain</option>
+              <option value="Pakisthan">Pakisthan</option>
+              <option value="Bangladesh">Bangladesh</option>
+            </select>
+           </p>
+          </fieldset>
+          <fieldset>
+            <br>
+           <legend><b><u><h2>Payment Details-</h2></u></b></legend>
+           <p>
+            <br>
+            <label for="anumber">Account Number:</label>
+            <input type="number" name="anumber" id="anumber">
+           </p>
+           <p>
+            <br>
+            <label for="Credit/Debit Card Number">Credit/Debit Card Number:</label>
+            <input type="number" name="Credit/Debit Card Number" id="Credit/Debit Card Number">
+           </p>
+           <p>
+            <br>
+            <label for="expdate">Expiration Date:</label>
+            <input type="date" name="expdate" id="expdate">
+           </p>
+           <p>
+            <br>
+            <label for="CVC/CVV">CVC/CVV:</label>
+            <input type="number" name="CVC/CVV" id="CVC/CVV">
+           </p>
+           <br>
+          </fieldset>
+          <br>
+          <div class="btn">
+          <input id="subm" type="submit" value="Donate" name="Donate">
+          <input id="res" type="reset" value="Clear" name="Clear">
+          </div>
+        </form>
+       </div>
+       <br><br>
+       <div class="footer">
+        <h3>About us</h3>
+        <p>As a company we do our best to increase the turtle habitat in Sri Lanka and Protect the Turtle Habitat in Sri Lanka.<br>
+            In the future also we do our best to protect the turtle habitat.</p>
+            <br>
+        <p>Follow Us</p>
+        <br>
+      <div class="icons">
+        <img src="./Faceboo icon.png">
+        <img src="./twitter icon.png">
+        <img src="./insta icon.png">
+        <img src="./youtube icon.png">
+    
+      </div>
+      <h3>Made By Save Turtules Team</h3>
+      <!--References-->
+    </div>
+      
+        
+        
+            <script>
+                var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+        
+            </script>
+</body>
+</html>

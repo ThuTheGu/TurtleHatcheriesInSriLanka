@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="About us.css">
+</head>
+<body>
+    <script src="About us.js"></script>
+    
+    <section class="sub-header">
+        <nav>
+         <a href="index.html"><img  src="./Logo.png"></a>
+         <div class="nav-links" id="navLinks">
+             <img src="./close_real_icon-.png" onclick="hideMenu()" id="img1">
+             <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="">Categories</a></li>
+                 <li><a href="">Turtles Hatcheries</a></li>
+                 <li><a href="">Purchase And Donate</a></li>
+                 <li><a href="">About Us</a></li>
+                 <li><a href="">Contact Us</a></li>
+             </ul>
+         </div>
+         <img src="./hmi_real.png" id="img2" onclick="showMenu()">
+        </nav>
+        <div class="text-box">
+        
+         <h1>About Us</h1>
+         <br><br><br><br>
+        
+        </div>
+     </section>
+     <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are dedicated to protect turtle habitat in Sri Lanka</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates impedit architecto harum? Ab animi corrupti et minus nesciunt alias nisi, eligendi doloremque placeat ipsum rerum eius laborum ad itaque omnis aliquam quasi saepe hic? Eligendi, optio voluptatem maxime magnam nam vero officiis eius consequuntur nostrum deserunt nesciunt ad temporibus?</p>
+            <a href="" class="lbtn abtn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="./au1.jpg" alt="">
+            </div>
+
+        </div>
+     </section>
+     <section>
+        <footer>
+     
+          <div class="frow">
+             <div class="fcol">
+                 <img src="./Logo.png" class="logo">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia amet quas officia nemo culpa pariatur dolore, omnis totam perspiciatis. Aperiam aut dolorem provident incidunt, laborum error deleniti nulla voluptates doloribus!</p>
+             </div>
+             <div class="fcol">
+               <h3>Head Office <div class="underline"><span></span></div></h3>
+               <p>No.02</p>
+               <p>Moratuwa Road, Moratuwa</p>
+              <p>Colombo, PIN 780098, Sri Lanka</p>
+              <p id="email">saveturtles@gmail.com</p>
+              <h4>+94 - 786543213</h4>
+             </div>
+             <div class="fcol">
+             <h3>Links<div class="underline"><span></span></div></h3>
+             <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="">Categories</a></li>
+                 <li><a href="">Turte Hatcheries</a></li>
+                 <li><a href="">Purchase And Donate</a></li>
+                 <li><a href="">About Us</a></li>
+                 <li><a href="">Contact Us</a></li>
+             </ul>
+             </div>
+             <div class="fcol">
+               <h3>Newsletter<div class="underline"><span></span></div></h3>
+               <form>
+                 <img src="./email_icon-removebg-preview.png">
+                 <input type="email" placeholder="Enter Your Email" required>
+                  <button type="submit"><img src="./Right Arrow.png"></button>
+               </form>
+               <div class="social-icons">
+                 <h3>Follow Us:</h3>
+                 <img src="./Facebook Real.png">
+                 <img src="./Instagram Real.png">
+                 <img src="./Whatsapp Real.png">
+                 <img src="./Twitter Real.png">
+               </div>
+             </div>
+          </div>
+    <hr>
+    <p class="copyright">Save Turtles © 2023 -All Rights Reserved</p>
+     <!--References-->
+        </footer>
+    </section>
+     <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu(){
+             navLinks.style.right = "0";
+         }
+         function hideMenu(){
+             navLinks.style.right = "-200px";
+         }
+     </script>
+               
+</body>
+</html>

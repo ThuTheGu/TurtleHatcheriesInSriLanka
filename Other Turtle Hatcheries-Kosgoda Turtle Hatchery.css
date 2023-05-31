@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@500;700&family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@500;700&family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./kosgoda\ turtle\ hatchery.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Roboto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    margin-top: 35px;
+}
+.nav-links li a{
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #00ccff;
+    color: #fff;
+    margin: 0 - .30rem;
+    padding: 0.30rem;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+    
+
+}
+.nav-links  li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00ff00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links  li a:hover::after{
+   width: 100%;
+}
+
+.register-btn{
+    background: #00ff00;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Roboto;
+}
+.register-btn:hover{
+    background-color: #fff;
+    color: #00ff00;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 12%;
+    font-family: Roboto;
+}
+.header h2{
+    font-size: 3vw;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-top: 1%;
+    font-family: Roboto;
+}
+.search-bar{
+    background: #fff;
+    width: 50%;
+    margin: 100px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   font-family: Roboto;
+
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-family: Roboto;
+}
+.search-bar form  button{
+    background: #00ff00;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form  button img{
+    width: 15px;
+    margin-top: 7px;
+}
+.search-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+    font-family: Roboto;
+}
+
+.imgt{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.img-row{
+    display: inline-flex;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 23px;
+    margin-left: 23px;
+  
+   
+    
+    
+}
+.img-row img{
+  width: 250px;
+  height: 200px;
+}
+.layer{
+    background:transparent;
+    height:200px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   transition: 0.5s;
+    
+}
+
+.layer:hover{
+    background:rgba(0, 0, 226, 0.7);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Open-sans;
+   
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+
+.mpara{
+    margin: 80px 90px;
+    background-color: #00ff00;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    text-align: center;
+}
+.mpara:hover{
+    
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2) ;
+}
+
+
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-family: Roboto;
+    text-align: center;
+}
+.details div{
+    background-color: #00ff00;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.details #section-1,#section-2,#section-3{
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+.details #section-2,#section-2-header,#section-2-content{
+   background-color:#00ccff ;
+}
+.details #section-1:hover{
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2) ;
+}
+.details #section-2:hover{
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2) ;
+}
+.details #section-3:hover{
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2) ;
+}
+ 
+
+nav .simg{
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    flex: none;
+    background-color: lightsalmon;
+}
+.footer h3{
+    margin-top:25px ;
+    margin-bottom:20px ;
+    font-weight: 600;
+    font-family:Open-sans ;
+}
+
+
+.icons img{
+    width: 20px;
+    height: 20px;
+    margin: 0 13px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+
+    }
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+    nav .simg{
+       display: block;
+       position: fixed;
+       top: 4%;
+       right: 7%;
+       color: #fff;
+       font-size: 28px;
+    }
+    nav .simg #sbtn{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hidemenu{
+        max-height: 300px;
+
+    }
+    .header h1{
+        padding-top: 200px;
+        font-size: 7vw;
+
+    }
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+
+    }
+    .search-bar form{
+        display: block;
+    }
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+
+    }
+   
+    .mpara{
+        padding: 15% 5%;
+
+    }
+   
+   
+}

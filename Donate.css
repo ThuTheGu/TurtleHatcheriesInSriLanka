@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@500;700&family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@500;700&family=Roboto:wght@500;700&family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./donate.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Roboto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    margin-top: 35px;
+}
+.nav-links li a{
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #00ccff;
+    color: #fff;
+    margin: 0 - .30rem;
+    padding: 0.30rem;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+    
+
+}
+.nav-links  li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00ff00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links  li a:hover::after{
+   width: 100%;
+}
+.register-btn{
+    background: #00ff00;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.register-btn:hover{
+    background-color: #fff;
+    color: #00ff00;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 12%;
+    font-family: Roboto;
+}
+.header h2{
+    font-size: 3vw;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-top: 1%;
+    font-family: Roboto;
+}
+.search-bar{
+    background: #fff;
+    width: 50%;
+    margin: 100px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    font-family: Roboto;
+}
+.search-bar form{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   font-family: Roboto;
+
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-family: Roboto;
+}
+.search-bar form  button{
+    background: #00ff00;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-family: Roboto;
+}
+.search-bar form  button img{
+    width: 15px;
+    margin-top: 7px;
+}
+.search-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+    font-family: Roboto;
+}
+#para{
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form{
+    display: flex;
+    background-color: #00ff00;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.form{
+    display: block;
+    
+    padding-left: 400px;
+    padding-right: 400px;
+}
+.btn{
+    margin-left: 70px;
+}
+#subm{
+   margin-left: 40px;
+   margin-right: 45px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #00ccff;
+    border: #00ccff 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+#subm:hover{
+background: #fff;
+color: #00ccff;
+border: #00ccff 1px solid;
+}
+#res{
+   
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #00ccff;
+    border: #00ccff 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+   
+}
+#res:hover{
+    background: #fff;
+    color: #00ccff;
+    border: #00ccff 1px solid;
+}
+nav .simg{
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    flex: none;
+    background-color: lightsalmon;
+}
+.footer h3{
+    margin-top:25px ;
+    margin-bottom:20px ;
+    font-weight: 600;
+    font-family:Open-sans ;
+}
+
+
+.icons img{
+    width: 20px;
+    height: 20px;
+    margin: 0 13px;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+
+    }
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+    nav .simg{
+       display: block;
+       position: fixed;
+       top: 4%;
+       right: 7%;
+       color: #fff;
+       font-size: 28px;
+    }
+    nav .simg #sbtn{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hidemenu{
+        max-height: 300px;
+
+    }
+    .header h1{
+        padding-top: 200px;
+        font-size: 7vw;
+
+    }
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+
+    }
+    .search-bar form{
+        display: block;
+    }
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+
+    }
+   
+    .mpara{
+        padding: 15% 5%;
+
+    }
+   
+   
+}
